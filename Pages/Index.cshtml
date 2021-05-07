@@ -1,0 +1,15 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to BodyBuds!</h1>
+    <p>BodyBuds is a completely free to use site that will help you to achieve your desired physique!
+         To get started on your new fitness journey, simply select your desired body type below.</p>
+</div>
+
+<select asp-items="Model.BodyTypesDropDown" classs="form-control">
+    <option value="">--- Select Your Desired Body Type ---</option>
+</select>
